@@ -1,0 +1,31 @@
+{
+    "name": "zagam/customerimport",
+    "description": "Importing Customers via CSV & JSON",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Zargam H.",
+            "email": "zargamhusayn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version":"2.0",
+    "require": {
+        "php": "~7.4.0||~8.1||~8.2",
+        "magento/module-customer": "103.0.*",
+        "magento/module-customer-import-export": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Zagam\\CustomerImport\\": ""
+        }
+    }
+}
